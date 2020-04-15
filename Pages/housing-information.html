@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Welcome Page</title>
+    <title>Housing Information Page</title>
     <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
@@ -18,7 +18,37 @@
     </header>
 </br>
 <h2><em>Housing Information</em></h2>
-
-
+<p> Please answer the questions on your housing form to what matches you best. The pairing of your roommate will depend on how you answer your questions. If your not a morning person, dont answer the question with your a morning person. We'd hate to see you not get along with your roommate who may be a morning person.</p>
+<form> <!---Added Housing Form to this Page after Initial Push over to GitHub-->
+    <fieldset>
+        <Legend>Housing Application Form</Legend>
+        First Name: <input name="firstname" type="text" placeholder="Enter your First Name" />
+        Last Name: <input name="lastname" type="text" placeholder="Enter your Last Name" />
+        School Email Address: <input name="emailAddress" type="email" placeholder="Enter your student email address" />
+        Student ID Number: <input name="studentidnumber" type="text" placeholder="Enter your Student ID Number" /></br>
+    </br>
+    <legend>What type of Roommate are you?</legend>
+    <label><input type="checkbox" name="earlymorningperson">I'm an early morning person! I like to be up early and get some stuff done before my 8:00 am class!</label></br>
+    <label><input type="checkbox" name="morningperson">I'm a morning person, but not super early,I'll get up early enough to take a shower and go grab a bite to eat before my 9:00 am class!</label></br>
+    <label><input type="checkbox" name="midmorningperson">I'm more of a mid morning person. I like to sleep in a little and catch breakfast to go before my 9:30 am class.</label></br>
+    <label><input type="checkbox" name="nightperson">Who likes to wake up early?! I'm more of a night person, I'm my best in the afternoon and tend to stay up late.</label></br>
+    <label><input type="checkbox" name="nightowl">I'm more of a night owl. I get my besy work done later at night!</label></br>
+</br>
+<legend>How social are you?</legend>
+    <label><input type="checkbox" name="notsocial">I like to keep to myself, I have lots of studying to do!</label></br>
+    <label><input type="checkbox" name="somewhatsocial">I like hanging out with friends! I'll hang out in their rooms, but I also like my alone time as well.</label></br>
+    <label><input type="checkbox" name="verysocial">I love spending time with friends and going out! You probably won't see me much in my dorm room.</label></br>
+</br>
+<legend>Do you have any diatary restrictions?</legend>
+    <label><input type="radio" name="diataryrestrictions-yes-no"> Yes</label>
+    <label><input type="radio" name="diataryrestrictions-yes-no"> No</label><br>
+</br>
+<legend>If you have a roommate in mind that you would like to request to live with please fill out their name below</legend>
+Roommate First Name: <input name="roommaterequestfirstname" type="text" placeholder="Roommate First Name" />
+Roommate Last Name: <Input name="roommaterequestlastname" type="text" placeholder="Roommate Last Name" /></br>
+</fieldset>
+<input type="submit" value="Submit Housing Application" />
+</form>
 
 </body>
+</html>
