@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>Welcome Page</title>
+    <title>New Student Orientation</title>
     <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
     <header> 
-        <h1>Welcome to your Enrollment Portal!</h1>
+        <h1>Register Now for NSO!!</h1>
         <div class="topnav">
-            <a href="landing-page.html">Log In</a>
+            <a href="log-in-page.html">Log In</a>
             <a href=" welcome-page.html">Welcome Page</a>
             <a href="housing-information.html">Housing Information</a>
             <a class="active" href="new-student-orientation.html">New Student Orientation</a>
@@ -17,8 +17,50 @@
         </div>
     </header>
 </br>
-<h2><em>New Student Orientation</em></h2>
+<h2><em>New Student Orientation Registration</em></h2>
+<form>
+    <fieldset>
+First Name: <input name="firstname" type="text" placeholder="Enter your first name" />
+Last Name: <input name="lastname" type="text" placeholder="Enter your Last Name" />
+</br>
+<hr>
+Do you have any diatary restrictions?
+</br>
+<label><input type="radio" name="diataryrestriction-yes-no">Yes</label>
+<label><input type="radio" name="diataryrestrictions-yes-no">No</label>
+</br>
+If Yes, please explain: <input name="diataryexplain" type="text" placeholder="Please List">
+</br>
+<hr>
+Do you have any life threating allergies?
+<label><input type="radio" name="life=threating-allergy-yes-no">Yes</label>
+<label><input type="radio" name="life=threating-allergy-yes-no">No</label>
+</br>
+If Yes, please explain: <input name="allergyexplain" type="text" placeholder="Please List">
+</br>
+<hr>
+What Session would you like to attend:
+</br>
+<label><input type="radio" name="orientation-session-1">Session 1: July 20-21st</label>
+<label><input type="radio" name="orientation-session-2">Session 2: July 22-23rd</label>
+<label><input type="radio" name="orientation-session-3">Session 3: July 23-24th</label>
+</fieldset>
+<input type="submit" value="Submit" />
 
-
-
+</form>
+<h3>What will I need to Bring with me for my overnight stay for New Student Orientation?</h3>
+<ul>
+    <li>Change of clothing, including sleepwear</li>
+    <li>Sneakers</li>
+    <li>Sweater or light jacket</li>
+    <li>Personal toiletries: Toothbrush, toothpast, shampoo, soap, towel</li>
+    <li>Prescription medication, if applicable</li>
+</ul>
+<h3>What should I NOT bring to New Student Orientation?</h3>
+<ul>
+    <li>Expensive Jewlery</li>
+    <li>Laptop computers</li>
+    <li>Alcohol or other drugs- <b>Please Note:</b> Alcohol/drugs are prohibited and any negative behaviors and/or improper conduct could affect your standing with Aiken College.</li>
+</ul>
 </body>
+</html>
