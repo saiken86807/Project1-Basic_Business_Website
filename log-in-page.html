@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
     <title>Log In Page for Enrollment Portal</title><!--changed from landing page to Log In Page-->
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
     <header class="navbar"> 
@@ -10,16 +10,21 @@
         <ul class="topnav"> <!--changed to unordered list from div-->
             <li><a class="active" href="log-in-page.html">Log In</a></li>
             <li><a href="welcome-page.html">Welcome Page</a></li>
-            <li><a href="housing-information.html">Housing Information</a></li>
-            <li><a href="new-student-orientation.html">New Student Orientation</a></li>
-            <li><a href="health-portal.html">Health Portal</a></li>
-            <li><a href="paying-your-tuition.html">Paying your Tuition</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">More</a>
+              <div class="dropdown-content">
+            <a href="housing-information.html">Housing Information</a>
+            <a href="new-student-orientation.html">New Student Orientation</a>
+            <a href="health-portal.html">Health Portal</a>
+            <a href="paying-your-tuition.html">Paying your Tuition</a>
+            </div>
+          </li>
         </ul> 
     </header>
 </br>
 <h2>You've made your deposit, and now your probably wondering What do I need to do next??</h2>
 <p>This will be your checklist guide to use over the summer to complete prior to moving onto campus this fall!</p>
-<img src="../img/aiken-college-logo.jpg" width="500" alt="Aiken College Logo">
+<img src="img/aiken-college-logo.jpg" width="500" alt="Aiken College Logo">
 </br>
 <form> <!--Added a Log In Section to the landing page-->
     <fieldset>

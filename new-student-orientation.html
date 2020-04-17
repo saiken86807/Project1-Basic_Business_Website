@@ -2,19 +2,24 @@
 <html lang="en-US">
 <head>
     <title>New Student Orientation</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header> 
-        <h1>Register Now for NSO!!</h1>
-        <div class="topnav">
-            <a href="log-in-page.html">Log In</a>
-            <a href=" welcome-page.html">Welcome Page</a>
+    <header class="navbar"> 
+        <h1>Welcome to your Enrollment Portal!</h1>
+        <ul class="topnav"> <!--changed to unordered list from div-->
+            <li><a href="log-in-page.html">Log In</a></li>
+            <li><a href="welcome-page.html">Welcome Page</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">More</a>
+              <div class="dropdown-content">
             <a href="housing-information.html">Housing Information</a>
-            <a class="active" href="new-student-orientation.html">New Student Orientation</a>
+            <a class="active" href="new-student-orientation.html">Orientation</a>
             <a href="health-portal.html">Health Portal</a>
             <a href="paying-your-tuition.html">Paying your Tuition</a>
-        </div>
+            </div>
+          </li>
+        </ul> 
     </header>
 </br>
 <h2><em>New Student Orientation Registration</em></h2>
