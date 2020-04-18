@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--This page is No Longer in Use-->
 <html lang="en-US">
 <head>
     <title>Log In Page for Enrollment Portal</title><!--changed from landing page to Log In Page-->
@@ -27,10 +27,13 @@
 <img src="img/aiken-college-logo.jpg" width="500" alt="Aiken College Logo">
 </br>
 <form> <!--Added a Log In Section to the landing page-->
-    <fieldset>
+    <fieldset class="log-in">
     Email Address: <input name="emailAddress" type="email" placeholder="Enter your Student Email Address" />
     Password: <input name="password" type="password" placeholder="Enter your Password" />
-    <input type="submit" value="Log In" />
+    <br>
+    <label class="form-check-label" for="rememberme">Remember Me</label>
+    <input type="checkbox" class="form-check-input" id="rememberme">
+    <button type="submit" value="Log In">Log In</button>
     </fieldset>
 </form>
 </body>

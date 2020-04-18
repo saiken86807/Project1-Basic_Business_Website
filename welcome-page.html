@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Page</title>
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -8,7 +10,7 @@
     <header class="navbar"> 
         <h1>Welcome to your Enrollment Portal!</h1>
         <ul class="topnav"> <!--changed to unordered list from div-->
-            <li><a href="log-in-page.html">Log In</a></li>
+            <li><button onclick="document.getElementById('loginpopout').style.display='block'" style="width:auto;">Log In</button></li>
             <li><a class="active" href="welcome-page.html">Welcome Page</a></li>
             <li class="dropdown">
               <a href="javascript:void(0)" class="dropbtn">More</a>
@@ -22,18 +24,58 @@
         </ul> 
     </header>
 </br>
-<h2><em>Welcome to your Enrollment Portal</em></h2>
+<h2><em>Welcome to your Enrollment Portal</em></h2><!--I have consolidated the original Log in page and Welcome Page into 1 page now-->
+<h3>Congratulations! You've made your choice to attend Aiken College by making your deposit</h3>
 <p>
-    This will  be your one-stop-shop Checklist guide to complete before you get ready to start your adventure here at College!
+    Now your probably wondering <i>What do I need to do next?</i>
+    Your Enrollment Portal will be your one-stop-shop checklist guide to complete before you get ready to start your journey here at Aiken College!
 </p>
 <section>
-    <ul>
-        <li><a href="housing-information.html">Housing Information</a></li>
-        <li><a href="new-student-orientation.html">New Student Orientation</a></li>
-        <li><a href="health-portal.html">Health Portal</a></li>
-        <li><a href="paying-your-tuition.html">Paying your Tuition</a></li>
+    <ol>
+        <li>Housing Information</li>
+        <li>New Student Orientation</li>
+        <li>Health Portal</li>
+        <li>Paying your Tuition</li>
     </ul>
 </section>
+<!--I decided to add a popout form for a log in screen instead within this new condensed page-->
+<button onclick="document.getElementById('loginpopout').style.display='block'" style="width:auto;">Login</button>
 
+<div id="loginpopout" class="popout">
+  
+  <form class="popout-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('loginpopout').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/Image 2.jpg" alt="Avatar" class="avatar">
+    </div>
 
+    <div class="container">
+      <label for="email"><b>Email Address</b></label>
+      <input type="text" placeholder="Enter Email Address" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:lightblue">
+      <button type="button" onclick="document.getElementById('loginpopout').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<script>
+    var modal = document.getElementById('loginpopout');
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
 </body>
+</html>
