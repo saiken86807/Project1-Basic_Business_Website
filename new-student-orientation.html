@@ -2,31 +2,59 @@
 <html lang="en-US">
 <head>
     <title>New Student Orientation</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" /><!--Added CSS and JS files from Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="navbar"> 
-        <h1>Welcome to your Enrollment Portal!</h1>
-        <ul class="topnav"> <!--changed to unordered list from div-->
-            <li><a href="#">Log Out</a></li>
-            <li><a href="welcome-page.html">Welcome Page</a></li>
-            <li class="dropdown">
-              <a href="javascript:void(0)" class="dropbtn">More</a>
-              <div class="dropdown-content">
-            <a href="housing-information.html">Housing Information</a>
-            <a class="active" href="new-student-orientation.html">Orientation</a>
-            <a href="health-portal.html">Health Portal</a>
-            <a href="paying-your-tuition.html">Paying your Tuition</a>
-            </div>
-          </li>
-        </ul> 
-    </header>
-</br>
-<h2><em>New Student Orientation Registration</em></h2>
+    <div class="jumbotron" style="margin-bottom: 0px;"><!--changed all Nav Bars on each page to bootstrap to utilize the hamburger menu-->
+        <h1>College Enrollment Portal</h1>
+        <p>Your Enrollment Portal will be your one-stop-shop checklist guide to complete before you get ready to start your journey here at Aiken College!</p>
+        </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Aiken College</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="welcome-page.html">Welcome <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="housing-information.html">Housing</a>
+            <a class="nav-item nav-link active" href="new-student-orientation.html">NSO <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="health-portal.html">Student Health</a>
+            <a class="nav-item nav-link" href="paying-your-tuition.html">Pay your Tuition</a>
+            <a><button onclick="document.getElementById('loginpopout').style.display='block'" style="width:auto;">Log Out</button></a>
+          </div>
+        </div>
+      </nav>
+</div>
+<div class="row"><!--Created a side column w/ main content area-->
+    <div class="side">
+        <img class="nso-img" src="img/NSO-logo.jpg" alt="New Student Orientation Logo" width=500><!--Added an NSO logo on the side bar-->
+<h3>What will I need to Bring with me for my overnight stay for New Student Orientation?</h3>
+<ul>
+    <li>Change of clothing, including sleepwear</li>
+    <li>Sneakers</li>
+    <li>Sweater or light jacket</li>
+    <li>Personal toiletries: Toothbrush, toothpast, shampoo, soap, towel</li>
+    <li>Prescription medication, if applicable</li>
+</ul>
+<h3>What should I NOT bring to New Student Orientation?</h3>
+<ul>
+    <li>Expensive Jewlery</li>
+    <li>Laptop computers</li>
+    <li>Alcohol or other drugs- <b>Please Note:</b> Alcohol/drugs are prohibited and any negative behaviors and/or improper conduct could affect your standing with Aiken College.</li>
+</ul>
+</div>
+<div class="main">
+    <h2 class="nso-mainh2"><em>New Student Orientation Registration Form</em></h2>
 <form>
-    <fieldset>
+    <fieldset class="nsoform">
 First Name: <input name="firstname" type="text" placeholder="Enter your first name" />
 Last Name: <input name="lastname" type="text" placeholder="Enter your Last Name" />
+Student ID Number: <input name="studentid" required type="text" placeholder="Student ID Number" />
 </br>
 <hr>
 Do you have any diatary restrictions?
@@ -50,22 +78,8 @@ What Session would you like to attend:
 <label><input type="radio" name="orientation-session-2">Session 2: July 22-23rd</label>
 <label><input type="radio" name="orientation-session-3">Session 3: July 23-24th</label>
 </fieldset>
-<input type="submit" value="Submit" />
-
+<button class="nso-button" type="submit">Submit Orientation form</button><!--Changed to a button-->
 </form>
-<h3>What will I need to Bring with me for my overnight stay for New Student Orientation?</h3>
-<ul>
-    <li>Change of clothing, including sleepwear</li>
-    <li>Sneakers</li>
-    <li>Sweater or light jacket</li>
-    <li>Personal toiletries: Toothbrush, toothpast, shampoo, soap, towel</li>
-    <li>Prescription medication, if applicable</li>
-</ul>
-<h3>What should I NOT bring to New Student Orientation?</h3>
-<ul>
-    <li>Expensive Jewlery</li>
-    <li>Laptop computers</li>
-    <li>Alcohol or other drugs- <b>Please Note:</b> Alcohol/drugs are prohibited and any negative behaviors and/or improper conduct could affect your standing with Aiken College.</li>
-</ul>
+</div>
 </body>
 </html>
