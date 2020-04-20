@@ -1,3 +1,6 @@
+html {
+  height: 100%;
+}
 
 /*        Navigation Bar       */
 .bg-primary.bg-primary{
@@ -128,7 +131,7 @@ span.psw {
 
 .main {
   flex: 60%;
-  background-color: lightblue;
+  background-color: #81d4fa;
   padding: 20px;
 }
 .row {
@@ -137,7 +140,7 @@ span.psw {
 }
 .side {
   flex: 40%;
-  background-color: lightblue;
+  background-color: #81d4fa;
   padding: 20px;
 }
 
@@ -148,32 +151,49 @@ span.psw {
 }
 .welcome-main {
   flex: 70%;
-  background-color: lightblue;
+  background-color: #81d4fa;
   padding: 20px;
 }
 .welcome-side{
   flex: 30%;
-  background-color: lightblue;
+  background-color: #81d4fa;
   padding: 20px;
 }
 .side-h3, .nso-mainh2, .housing-sideh2 {
   text-align: center;
 }
-
+.must-have-h3 {
+  text-align: center;
+  padding: 20px;
+}
 
 /*  Styling   */ 
 .nsoform, .housingform {
   background-color: lightgrey;
   padding: 20px;
   font-size: 14px;
+  border-radius: 5px;
 }
 
 body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-color: lightblue;
+  background-color: #81d4fa!important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-.carousel-caption {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif!important;
-  font-size: 2em;
-  font-weight: bold!important;
+.housing-info {
+  background-color: lightgray;
+  text-align: center;
+}
+.dorm-checklist, .financing {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+footer {
+  margin-top: auto;
+  padding: 3em;
+  background-image: linear-gradient(#81d4fa, #b388ff);
 }

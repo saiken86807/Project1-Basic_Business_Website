@@ -33,53 +33,59 @@
 <div class="row"><!--Created a side column w/ main content area-->
     <div class="side">
         <img class="nso-img" src="img/NSO-logo.jpg" alt="New Student Orientation Logo" width=500><!--Added an NSO logo on the side bar-->
-<h3>What will I need to Bring with me for my overnight stay for New Student Orientation?</h3>
-<ul>
-    <li>Change of clothing, including sleepwear</li>
-    <li>Sneakers</li>
-    <li>Sweater or light jacket</li>
-    <li>Personal toiletries: Toothbrush, toothpast, shampoo, soap, towel</li>
-    <li>Prescription medication, if applicable</li>
-</ul>
-<h3>What should I NOT bring to New Student Orientation?</h3>
-<ul>
-    <li>Expensive Jewlery</li>
-    <li>Laptop computers</li>
-    <li>Alcohol or other drugs- <b>Please Note:</b> Alcohol/drugs are prohibited and any negative behaviors and/or improper conduct could affect your standing with Aiken College.</li>
-</ul>
-</div>
-<div class="main">
-    <h2 class="nso-mainh2"><em>New Student Orientation Registration Form</em></h2>
-<form>
-    <fieldset class="nsoform">
-First Name: <input name="firstname" type="text" placeholder="Enter your first name" />
-Last Name: <input name="lastname" type="text" placeholder="Enter your Last Name" />
-Student ID Number: <input name="studentid" required type="text" placeholder="Student ID Number" />
-</br>
-<hr>
-Do you have any diatary restrictions?
-</br>
-<label><input type="radio" name="diataryrestriction-yes-no">Yes</label>
-<label><input type="radio" name="diataryrestrictions-yes-no">No</label>
-</br>
-If Yes, please explain: <input name="diataryexplain" type="text" placeholder="Please List">
-</br>
-<hr>
-Do you have any life threating allergies?
-<label><input type="radio" name="life=threating-allergy-yes-no">Yes</label>
-<label><input type="radio" name="life=threating-allergy-yes-no">No</label>
-</br>
-If Yes, please explain: <input name="allergyexplain" type="text" placeholder="Please List">
-</br>
-<hr>
-What Session would you like to attend:
-</br>
-<label><input type="radio" name="orientation-session-1">Session 1: July 20-21st</label>
-<label><input type="radio" name="orientation-session-2">Session 2: July 22-23rd</label>
-<label><input type="radio" name="orientation-session-3">Session 3: July 23-24th</label>
-</fieldset>
-<button class="nso-button" type="submit">Submit Orientation form</button><!--Changed to a button-->
-</form>
-</div>
+        <h3>What will I need to Bring with me for my overnight stay for New Student Orientation?</h3>
+            <ul>
+                <li>Change of clothing, including sleepwear</li>
+                <li>Sneakers</li>
+                <li>Sweater or light jacket</li>
+                <li>Personal toiletries: Toothbrush, toothpast, shampoo, soap, towel</li>
+                <li>Prescription medication, if applicable</li>
+            </ul>
+        <h3>What should I NOT bring to New Student Orientation?</h3>
+            <ul>
+                <li>Expensive Jewlery</li>
+                <li>Laptop computers</li>
+                <li>Alcohol or other drugs- <b>Please Note:</b> Alcohol/drugs are prohibited and any negative behaviors and/or improper conduct could affect your standing with Aiken College.</li>
+            </ul>
+    </div>
+    <div class="main">
+        <h2 class="nso-mainh2"><em>New Student Orientation Registration Form</em></h2>
+        <form action="https://formspree.io/xlewykzl" method="POST"><!--I added the formspree.io to test out my form submissions-->
+            <fieldset class="nsoform">
+                    First Name: <input name="firstname" type="text" placeholder="Enter your first name" />
+                    Last Name: <input name="lastname" type="text" placeholder="Enter your Last Name" />
+                    Student ID Number: <input name="studentid" required type="text" placeholder="Student ID Number" />
+                    </br>
+                    <hr>
+                Do you have any dietary restrictions?
+                    </br>
+                    <label><input type="radio" name="dietaryrestriction-yes">Yes</label>
+                    <label><input type="radio" name="dietaryrestrictions-no">No</label>
+                    </br>
+                If Yes, please explain: <input name="dietaryexplain" type="text" placeholder="Please List">
+                    </br>
+                    <hr>
+                Do you have any life threating allergies?
+                    <label><input type="radio" name="life-threating-allergy-yes">Yes</label>
+                    <label><input type="radio" name="life-threating-allergy-no">No</label>
+                    </br>
+                If Yes, please explain: <input name="allergyexplain" type="text" placeholder="Please List">
+                    </br>
+                    <hr>
+                What Session would you like to attend:
+                    </br>
+                    <label><input type="radio" name="orientation-session-1">Session 1: July 20-21st</label>
+                    <label><input type="radio" name="orientation-session-2">Session 2: July 22-23rd</label>
+                    <label><input type="radio" name="orientation-session-3">Session 3: July 23-24th</label>
+            </fieldset>
+            <button class="nso-button" type="submit">Submit Orientation form</button><!--Changed to a button-->
+        </form>
+    </div>
+    </div>
+    <footer><!--added a footer-->
+        <p>
+          copyright 2020.
+        </p>
+    </footer>
 </body>
 </html>

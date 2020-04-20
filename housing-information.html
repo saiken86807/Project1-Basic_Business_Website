@@ -11,8 +11,8 @@
 <body>
     <div class="jumbotron" style="margin-bottom: 0px;"><!--changed all Nav Bars on each page to bootstrap to utilize the hamburger menu-->
         <h1>College Enrollment Portal</h1>
-        <p>Your Enrollment Portal will be your one-stop-shop checklist guide to complete before you get ready to start your journey here at Aiken College!</p>
-        </div>
+            <p>Your Enrollment Portal will be your one-stop-shop checklist guide to complete before you get ready to start your journey here at Aiken College!</p>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#">Aiken College</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,43 +28,60 @@
             <a><button onclick="document.getElementById('loginpopout').style.display='block'" style="width:auto;">Log Out</button></a>
           </div>
         </div>
-      </nav>
-<h2><em>On-campus Housing Information</em></h2>
-<p> Please answer the questions on your housing form to what matches you best. The pairing of your roommate will depend on how you answer your questions. If your not a morning person, dont answer the question with your a morning person. We'd hate to see you not get along with your roommate who may be a morning person.</p>
+    </nav>
+    <div class="housing-info">
+        <h2><em>On-campus Housing Information</em></h2>
+        Please answer the questions on your housing form to what matches you best. The pairing of your roommate will depend on how you answer your questions. If you're not a morning person, dont answer the question with your a morning person. We'd hate to see you not get along with your roommate who may be a morning person.
+    </div>  
 <div class="row"><!--added side bar to this page-->
     <div class="side"> 
-<form> <!---Added Housing Form to this Page after Initial Push over to GitHub-->
-    <fieldset class="housingform">
-        <h2 class="housing-sideh2">Housing Application Form</h2>
-        First Name: <input name="firstname" type="text" required placeholder="Enter your First Name" />
-        Last Name: <input name="lastname" type="text" required placeholder="Enter your Last Name" />
-        School Email Address: <input name="emailAddress" type="email" placeholder="Enter your student email address" />
-        Student ID Number: <input name="studentidnumber" required type="text" placeholder="Enter your Student ID Number" /></br>
-    </br>
-    <legend>What type of Roommate are you?</legend>
-    <label><input type="checkbox" name="earlymorningperson">I'm an early morning person! I like to be up early and get some stuff done before my 8:00 am class!</label></br>
-    <label><input type="checkbox" name="morningperson">I'm a morning person, but not super early,I'll get up early enough to take a shower and go grab a bite to eat before my 9:00 am class!</label></br>
-    <label><input type="checkbox" name="midmorningperson">I'm more of a mid morning person. I like to sleep in a little and catch breakfast to go before my 9:30 am class.</label></br>
-    <label><input type="checkbox" name="nightperson">Who likes to wake up early?! I'm more of a night person, I'm my best in the afternoon and tend to stay up late.</label></br>
-    <label><input type="checkbox" name="nightowl">I'm more of a night owl. I get my besy work done later at night!</label></br>
-</br>
-<legend>How social are you?</legend>
-    <label><input type="checkbox" name="notsocial">I like to keep to myself, I have lots of studying to do!</label></br>
-    <label><input type="checkbox" name="somewhatsocial">I like hanging out with friends! I'll hang out in their rooms, but I also like my alone time as well.</label></br>
-    <label><input type="checkbox" name="verysocial">I love spending time with friends and going out! You probably won't see me much in my dorm room.</label></br>
-</br>
-<legend>Do you have any diatary restrictions?</legend>
-    <label><input type="radio" name="diataryrestrictions-yes-no"> Yes</label>
-    <label><input type="radio" name="diataryrestrictions-yes-no"> No</label><br>
-</br>
-<legend>If you have a roommate in mind that you would like to request to live with please fill out their name below</legend>
-Roommate First Name: <input name="roommaterequestfirstname" type="text" placeholder="Roommate First Name" />
-Roommate Last Name: <Input name="roommaterequestlastname" type="text" placeholder="Roommate Last Name" /></br>
-</fieldset>
-<button class="housing-button" type="submit">Submit Housing Application</button><!--Changed to a button-->
+<form action="https://formspree.io/xlewykzl" method="POST"> <!---Added Housing Form to this Page after Initial Push over to GitHub-->
+        <fieldset class="housingform"><!--also added the formspree.io to test out my form submissions-->
+            <h2 class="housing-sideh2">Housing Application Form</h2>
+        <div>
+            First Name: <input name="firstname" type="text" required placeholder="Enter your First Name" /><br>
+            Last Name: <input name="lastname" type="text" required placeholder="Enter your Last Name" /><br>
+            School Email Address: <input name="emailAddress" type="text" placeholder="Enter your student email address" /><br>
+            Student ID Number: <input name="studentidnumber" required type="text" placeholder="Enter your Student ID Number" /><br>
+        </div>
+        <div>
+            <h4>What type of Roommate are you?</h4>
+                <input type="radio" id="earlymorning" name="roommatetype" value="earlymorning">
+                <label for="earlymorning">I'm an early morning person! I like to be up early and get some stuff done before my 8:00 am class!</label><br>
+                <input type="radio" id="morning" name="roommatetype" value="morning">
+                <label for="morning">I'm a morning person, but not super early,I'll get up early enough to take a shower and go grab a bite to eat before my 9:00 am class!</label><br>
+                <input type="radio" id="midmorning" name="roommatetype" value="midmorning">
+                <label for="midmorning">I'm more of a mid morning person. I like to sleep in a little and catch breakfast to go before my 9:30 am class.</label><br>
+                <input type="radio" id="nightperson" name="roommatetype" value="nightperson">
+                <label for="nightperson">Who likes to wake up early?! I'm more of a night person, I'm my best in the afternoon and tend to stay up late.</label><br>
+                <input type="radio" id="nightowl" name="roommatetype" value="nightowl">
+                <label for="nightowl">I'm more of a night owl. I get my besy work done later at night!</label><br>
+            </div>
+        <div>
+            <h4>How social are you?</h4>
+                <input type="checkbox" id="notsocial" name="howsocial" value="notsocial">
+                <label for="notsocial"> I like to keep to myself, I have lots of studying to do!</label><br>
+                <input type="checkbox" id="somewhatsocial" name="howsocial" value="somewhatsocial">
+                <label for="somewhatsocial"> I like hanging out with friends! I'll hang out in their rooms, but I also like my alone time as well.</label><br>
+                <input type="checkbox" id="verysocial" name="howsocial" value="verysocial">
+                <label for="verysocial"> I love spending time with friends and going out! You probably won't see me much in my dorm room.</label><br>
+        </div>
+        <div>
+            <h4>Do you have any dietary restrictions?</h4>
+                <label><input type="radio" name="dietaryrestrictions-yes"> Yes</label>
+                <label><input type="radio" name="dietaryrestrictions-no"> No</label>
+        </div>
+        <div>
+            <h4>If you have a roommate in mind that you would like to request to live with please fill out their name below</h4>
+                Roommate First Name: <input name="roommaterequestfirstname" type="text" placeholder="Roommate First Name" />
+                Roommate Last Name: <Input name="roommaterequestlastname" type="text" placeholder="Roommate Last Name" /></br>
+        </div>
+    </fieldset>
+    <button class="housing-button" type="submit">Submit Housing Application</button><!--Changed to a button-->
 </form>
 </div>
 <div class="main">
+<section>
   <div id="HousingCarousel" class="carousel slide" data-ride="carousel"><!--Added Carousel to the main section of this page-->
   <ol class="carousel-indicators">
       <li data-target="#HousingCarousel" data-slide-to="0" class="active"></li>
@@ -73,23 +90,22 @@ Roommate Last Name: <Input name="roommaterequestlastname" type="text" placeholde
   </ol>
   <div class="carousel-inner" role="listbox"> 
       <div class="carousel-item active">
-          <img class="d-block w-100" src="img/freshman-move-in.jpg" alt="freshman Move-in">
+          <img class="d-block w-100" src="img/res-halls.jpg" alt="freshman Move-in">
           <div class="carousel-caption">
-              <p>Freshman move-in weekend will be here before you know it!</p>
+              <h3>Move-in weekend will be here before you know it!</h3>>
           </div>
       </div>
       <div class="carousel-item">
-          <img class="d-block w-100" src="img/college-dorm-room.jpg" alt="college dormroom">
+          <img class="d-block w-100" src="img/study-in-dorm.jpg" alt="college dormroom">
           <div class="carousel-caption">
               <h3>College Dorm Room</h3>
               <p>A place where you will sleep, study and hang out with your roommates!</p>
           </div>
       </div>
       <div class="carousel-item">
-          <img class="d-block w-100" src="img/residence-halls.jpg" alt="students outside dorms">
+          <img class="d-block w-100" src="img/were-ready-for-you.jpg" alt="students outside dorms">
           <div class="carousel-caption">
               <h3>We cant wait to see you in the fall!</h3>
-              <p>Your journey is about to begin!</p>
           </div>
       </div>
       <a class="carousel-control-prev" href="#HousingCarousel" role="button" data-slde="prev">
@@ -101,8 +117,17 @@ Roommate Last Name: <Input name="roommaterequestlastname" type="text" placeholde
           <span class="sr-only">Next</span>
       </a>
   </div>
+</section>
+<section>
+    <h3 class="must-have-h3"><em>Dont forget your must have items!</em></h3>
+    <img class="dorm-checklist" src="img/college-dorm-checklist.jpg" alt="college checklist" width="500">
+</section>
 </div>
 </div>
-
+<footer><!--added a footer-->
+    <p>
+      copyright 2020.
+    </p>
+</footer>
 </body>
 </html>
