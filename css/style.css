@@ -21,7 +21,7 @@ html {
 
 /*   Log In popout screen */
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email] {
 width: 100%;
 padding: 12px 20px;
 margin: 8px 0;
@@ -163,7 +163,7 @@ span.psw {
   background-color: #81d4fa;
   padding: 20px;
 }
-.side-h3, .nso-mainh2, .housing-sideh2 {
+.nso-mainh2, .housing-sideh2 {
   text-align: center;
 }
 .must-have-h3 {
