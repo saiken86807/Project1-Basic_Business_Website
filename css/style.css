@@ -1,10 +1,12 @@
-html {
+/* added the html height 100% so the footer would sat at the botton, even on a mobile device*/
+html { 
   height: 100%;
 }
 
 /*        Navigation Bar       */
 .bg-primary.bg-primary{
   background-color: #b388ff!important;
+  padding: 10px;
 }
 .navbar-nav a:hover {
   background-color: #40c4ff;
@@ -123,6 +125,8 @@ span.psw {
    width: 100%;
 }
 }
+/*   End of Log In popout screen */
+
 
 /*  side bar layout */
 * {
@@ -154,7 +158,7 @@ span.psw {
   background-color: #81d4fa;
   padding: 20px;
 }
-.welcome-side{
+.welcome-side {
   flex: 30%;
   background-color: #81d4fa;
   padding: 20px;
@@ -181,9 +185,12 @@ body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Luci
   flex-direction: column;
   min-height: 100%;
 }
+.welcome-main > p, ol {
+font-size: 20px;
+}
 
 .housing-info {
-  background-color: lightgray;
+  background-color: #81d4fa;
   text-align: center;
 }
 .dorm-checklist, .financing {
