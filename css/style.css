@@ -153,16 +153,6 @@ span.psw {
     flex-direction: column;
   }
 }
-.welcome-main {
-  flex: 70%;
-  background-color: #81d4fa;
-  padding: 20px;
-}
-.welcome-side {
-  flex: 30%;
-  background-color: #81d4fa;
-  padding: 20px;
-}
 .nso-mainh2, .housing-sideh2 {
   text-align: center;
 }
@@ -185,10 +175,16 @@ body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Luci
   flex-direction: column;
   min-height: 100%;
 }
+.checklist-section {
+  float: left;
+  padding-right: 30px;
+}
 .welcome-main > p, ol {
 font-size: 20px;
 }
-
+.logout:hover {
+  text-decoration: none;
+}
 .housing-info {
   background-color: #81d4fa;
   text-align: center;
