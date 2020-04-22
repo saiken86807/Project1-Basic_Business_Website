@@ -16,6 +16,9 @@ html {
   text-align: center;
   font-size: 26px;
 }
+.logout:hover {
+  text-decoration: none;
+}
 
 /*   End of Navigation Bar   */
 
@@ -147,6 +150,18 @@ span.psw {
   background-color: #81d4fa;
   padding: 20px;
 }
+.nso-main {
+  flex: 45%;
+  background-color: #81d4fa;
+  padding: 20px;
+}
+
+.nso-side {
+  flex: 55%;
+  background-color: #81d4fa;
+  padding: 20px;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -178,24 +193,26 @@ span.psw {
   border-radius: 5px;
 }
 
-body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif!important;
   background-color: #81d4fa!important;
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
-.checklist-section, .footer-info {
+.checklist-section, .footer-info, .health-portal, .tuition-body {
   float: left;
   padding-right: 30px;
+  margin: 10px;
+}
+
+#multi-column-body {
+  margin: 10px;
 }
 
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.logout:hover {
-  text-decoration: none;
-}
 .housing-info {
   background-color: #81d4fa;
   text-align: center;
@@ -206,6 +223,7 @@ body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Luci
   margin-right: auto;
   width: 50%;
 }
+
 /* Added styling for footer */
 footer {
   margin-top: auto;
@@ -216,7 +234,10 @@ footer {
 
 .footer-social {
   list-style-type: none;
-  margin: 0;
+  margin: 10;
   padding: 0;
   float: right;
 }
+
+
+

@@ -29,8 +29,9 @@
           </div>
         </div>
       </nav>
+      <div id="multi-column-body">
       <div class="row"><!--Created a side column w/ main content area-->
-        <div class="side">
+        <div class="nso-side">
             <img class="nso-img" src="img/NSO-logo.jpg" alt="New Student Orientation Logo" width=500><!--Added an NSO logo on the side bar-->
             <h3>What will I need to Bring with me for my overnight stay for New Student Orientation?</h3>
                 <ul>
@@ -47,7 +48,7 @@
                     <li>Alcohol or other drugs- <b>Please Note:</b> Alcohol/drugs are prohibited and any negative behaviors and/or improper conduct could affect your standing with Aiken College.</li>
                 </ul>
         </div>
-        <div class="main">
+        <div class="nso-main">
             <h2 class="nso-mainh2"><em>New Student Orientation Registration Form</em></h2>
             <form action="https://formspree.io/xlewykzl" method="POST"><!--I added the formspree.io to test out my form submissions-->
                 <fieldset class="nsoform">
@@ -58,21 +59,21 @@
                 </div>
                     <hr>
                 <div>   
-                    <h6>Do you have any dietary restrictions?</h6>
+                    <h5>Do you have any dietary restrictions?</h5>
                         <label><input type="radio" name="dietaryrestriction-yes">Yes</label>
                         <label><input type="radio" name="dietaryrestrictions-no">No</label>
                     <h6>If Yes, please explain: <input name="dietaryexplain" type="text" placeholder="Please List"></h6>
                 </div> 
                     <hr>
                 <div>
-                    <h6>Do you have any life threating allergies?</h6>
+                    <h5>Do you have any life threating allergies?</h5>
                         <label><input type="radio" name="life-threating-allergy-yes">Yes</label>
                         <label><input type="radio" name="life-threating-allergy-no">No</label>
                     <h6>If Yes, please explain: <input name="allergyexplain" type="text" placeholder="Please List"></h6>
                 </div>
                     <hr>
                 <div>
-                    <h6>What Session would you like to attend:</h6>
+                    <h5>What Session would you like to attend:</h5>
                         <label><input type="radio" name="orientation-session-1">Session 1: July 20-21st</label><br>
                         <label><input type="radio" name="orientation-session-2">Session 2: July 22-23rd</label><br>
                         <label><input type="radio" name="orientation-session-3">Session 3: July 23-24th</label>
@@ -81,6 +82,7 @@
             <button class="nso-button" type="submit">Submit Orientation form</button><!--Changed to a button-->
         </form>
     </div>
+</div>
 </div>
 <footer><!--added a footer-->
     <div class="footer-info">
