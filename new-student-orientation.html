@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--redid entire sheet so form would be like the housing form 4.21.2020-->
 <html lang="en-US">
 <head>
     <title>New Student Orientation</title>
-    <link rel="stylesheet" href="css/style.css" /><!--Added CSS and JS files from Bootstrap-->
+    <link rel="stylesheet" href="css/styles5.css" /><!--Added CSS and JS files from Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -29,62 +29,63 @@
           </div>
         </div>
       </nav>
-<div class="row"><!--Created a side column w/ main content area-->
-    <div class="side">
-        <img class="nso-img" src="img/NSO-logo.jpg" alt="New Student Orientation Logo" width=500><!--Added an NSO logo on the side bar-->
-        <h3>What will I need to Bring with me for my overnight stay for New Student Orientation?</h3>
-            <ul>
-                <li>Change of clothing, including sleepwear</li>
-                <li>Sneakers</li>
-                <li>Sweater or light jacket</li>
-                <li>Personal toiletries: Toothbrush, toothpast, shampoo, soap, towel</li>
-                <li>Prescription medication, if applicable</li>
-            </ul>
-        <h3>What should I NOT bring to New Student Orientation?</h3>
-            <ul>
-                <li>Expensive Jewlery</li>
-                <li>Laptop computers</li>
-                <li>Alcohol or other drugs- <b>Please Note:</b> Alcohol/drugs are prohibited and any negative behaviors and/or improper conduct could affect your standing with Aiken College.</li>
-            </ul>
-    </div>
-    <div class="main">
-        <h2 class="nso-mainh2"><em>New Student Orientation Registration Form</em></h2>
-        <form action="https://formspree.io/xlewykzl" method="POST"><!--I added the formspree.io to test out my form submissions-->
-            <fieldset class="nsoform">
-                    First Name: <input name="firstname" type="text" placeholder="Enter your first name" />
-                    Last Name: <input name="lastname" type="text" placeholder="Enter your Last Name" />
-                    Student ID Number: <input name="studentid" required type="email" placeholder="Student ID Number" />
-                    </br>
+      <div class="row"><!--Created a side column w/ main content area-->
+        <div class="side">
+            <img class="nso-img" src="img/NSO-logo.jpg" alt="New Student Orientation Logo" width=500><!--Added an NSO logo on the side bar-->
+            <h3>What will I need to Bring with me for my overnight stay for New Student Orientation?</h3>
+                <ul>
+                    <li>Change of clothing, including sleepwear</li>
+                    <li>Sneakers</li>
+                    <li>Sweater or light jacket</li>
+                    <li>Personal toiletries: Toothbrush, toothpast, shampoo, soap, towel</li>
+                    <li>Prescription medication, if applicable</li>
+                </ul>
+            <h3>What should I NOT bring to New Student Orientation?</h3>
+                <ul>
+                    <li>Expensive Jewlery</li>
+                    <li>Laptop computers</li>
+                    <li>Alcohol or other drugs- <b>Please Note:</b> Alcohol/drugs are prohibited and any negative behaviors and/or improper conduct could affect your standing with Aiken College.</li>
+                </ul>
+        </div>
+        <div class="main">
+            <h2 class="nso-mainh2"><em>New Student Orientation Registration Form</em></h2>
+            <form action="https://formspree.io/xlewykzl" method="POST"><!--I added the formspree.io to test out my form submissions-->
+                <fieldset class="nsoform">
+                    <div>
+                        First Name: <input name="firstname" type="text" placeholder="Enter your first name" />
+                        Last Name: <input name="lastname" type="text" placeholder="Enter your Last Name" />
+                        Student ID Number: <input name="studentid" required type="text" placeholder="Student ID Number" />
+                </div>
                     <hr>
-                Do you have any dietary restrictions?
-                    </br>
-                    <label><input type="radio" name="dietaryrestriction-yes">Yes</label>
-                    <label><input type="radio" name="dietaryrestrictions-no">No</label>
-                    </br>
-                If Yes, please explain: <input name="dietaryexplain" type="text" placeholder="Please List">
-                    </br>
+                <div>   
+                    <h6>Do you have any dietary restrictions?</h6>
+                        <label><input type="radio" name="dietaryrestriction-yes">Yes</label>
+                        <label><input type="radio" name="dietaryrestrictions-no">No</label>
+                    <h6>If Yes, please explain: <input name="dietaryexplain" type="text" placeholder="Please List"></h6>
+                </div> 
                     <hr>
-                Do you have any life threating allergies?
-                    <label><input type="radio" name="life-threating-allergy-yes">Yes</label>
-                    <label><input type="radio" name="life-threating-allergy-no">No</label>
-                    </br>
-                If Yes, please explain: <input name="allergyexplain" type="text" placeholder="Please List">
-                    </br>
+                <div>
+                    <h6>Do you have any life threating allergies?</h6>
+                        <label><input type="radio" name="life-threating-allergy-yes">Yes</label>
+                        <label><input type="radio" name="life-threating-allergy-no">No</label>
+                    <h6>If Yes, please explain: <input name="allergyexplain" type="text" placeholder="Please List"></h6>
+                </div>
                     <hr>
-                What Session would you like to attend:
-                    </br>
-                    <label><input type="radio" name="orientation-session-1">Session 1: July 20-21st</label>
-                    <label><input type="radio" name="orientation-session-2">Session 2: July 22-23rd</label>
-                    <label><input type="radio" name="orientation-session-3">Session 3: July 23-24th</label>
+                <div>
+                    <h6>What Session would you like to attend:</h6>
+                        <label><input type="radio" name="orientation-session-1">Session 1: July 20-21st</label><br>
+                        <label><input type="radio" name="orientation-session-2">Session 2: July 22-23rd</label><br>
+                        <label><input type="radio" name="orientation-session-3">Session 3: July 23-24th</label>
+                </div>
             </fieldset>
             <button class="nso-button" type="submit">Submit Orientation form</button><!--Changed to a button-->
         </form>
     </div>
-    </div>
-    <footer><!--added a footer-->
-        <p>
-          copyright 2020.
-        </p>
-    </footer>
+</div>
+<footer><!--added a footer-->
+    <p>
+      copyright 2020.
+    </p>
+</footer>
 </body>
 </html>
