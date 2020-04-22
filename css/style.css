@@ -179,9 +179,10 @@ body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Luci
   float: left;
   padding-right: 30px;
 }
-.welcome-main > p, ol {
-font-size: 20px;
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
 }
+
 .logout:hover {
   text-decoration: none;
 }
