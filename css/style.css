@@ -31,7 +31,7 @@ width: 100%;
 padding: 12px 20px;
 margin: 8px 0;
 display: inline-block;
-border: 2px solid #8842d5;
+border: 3px solid #8842d5;
 box-sizing: border-box;
 border-radius: 5px;
 }
@@ -224,7 +224,6 @@ body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Luci
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 }
 /* Housing form edits for radio and checkbox alignment. Edit suggestions by Melvin */
 .checkbox, .checkbox1 {
@@ -241,6 +240,13 @@ body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Luci
   flex: 1;
   position: relative;
   top: 0.5em;
+}
+
+.checkbox1 input:checked ~ span {
+  background-color: #03a9f4;
+}
+.checkbox1 input:checked ~ span:after {
+  display:block;
 }
 
 .checkbox label, .checkbox1 label {
@@ -263,10 +269,10 @@ body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Luci
 .nso-img, .financing {
   padding-bottom: 20px;
 }
-    button:hover {
+    
+button:hover {
       background-color: #40c4ff;
     }
-
 
 /* Added styling for footer */
 footer {
@@ -283,6 +289,3 @@ footer {
   padding: 0;
   float: right;
 }
-
-
-

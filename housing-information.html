@@ -86,9 +86,12 @@
         </div>
         <div>
             <h5>Do you have any dietary restrictions?</h5>
-                <label><input type="radio" name="dietaryrestrictions-yes"> Yes</label>
-                <label><input type="radio" name="dietaryrestrictions-no"> No</label>
-        </div>
+                <label for="dietary-yes">Yes</label>
+                <input type="radio" name="dietary-yes-no" id="dietary-yes" value="dietary-yes"><br>
+                <label for="dietary-no">No</label>
+                <input type="radio" name="dietary-yes-no" id="dietary-no" value="dietary-no">
+                <h6>If Yes, please explain: <input name="dietaryexplain" type="text" placeholder="Please List"></h6>
+            </div>
         <div>
             <h5>If you have a roommate in mind that you would like to request to dorm with please fill out their name below:</h5>
                 Roommate First Name: <input name="roommaterequestfirstname" type="text" placeholder="Roommate First Name" />
@@ -129,7 +132,7 @@
     </div>
     <div>
         <h3 class="must-have-h3"><em>Dont forget your must have items!</em></h3>
-        <img class="dorm-checklist" src="img/college-dorm-checklist.jpg" alt="college checklist" width="500">
+        <img class="dorm-checklist" src="img/freshman-dorm-checklist.jpg" alt="college checklist" width="600"><!--Changed Photo-->
     </div>
 </div>
 </div>
