@@ -2,6 +2,7 @@
 <html lang="en-US">
 <head>
     <title>Housing Information Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css" /><!--Added CSS and JS files from Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -47,25 +48,41 @@
         </div>
         <div>
             <h5>What type of Roommate are you?</h5>
+            <div class="checkbox">
                 <input type="radio" id="earlymorning" name="roommatetype" value="earlymorning">
-                <label for="earlymorning">I'm an early morning person! I like to be up early and get some stuff done before my 8:00 am class!</label><br>
+                <label for="earlymorning">I'm an early morning person! I like to be up early and get some stuff done before my 8:00 am class!</label>
+            </div>
+            <div class="checkbox">
                 <input type="radio" id="morning" name="roommatetype" value="morning">
-                <label for="morning">I'm a morning person, but not super early,I'll get up early enough to take a shower and go grab a bite to eat before my 9:00 am class!</label><br>
+                <label for="morning">I'm a morning person, but not super early,I'll get up early enough to take a shower and go grab a bite to eat before my 9:00 am class!</label>
+            </div>
+            <div class="checkbox">
                 <input type="radio" id="midmorning" name="roommatetype" value="midmorning">
-                <label for="midmorning">I'm more of a mid morning person. I like to sleep in a little and catch breakfast to go before my 9:30 am class.</label><br>
+                <label for="midmorning">I'm more of a mid morning person. I like to sleep in a little and catch breakfast to go before my 9:30 am class.</label>
+            </div>
+            <div class="checkbox">
                 <input type="radio" id="nightperson" name="roommatetype" value="nightperson">
-                <label for="nightperson">Who likes to wake up early?! I'm more of a night person, I'm my best in the afternoon and tend to stay up late.</label><br>
+                <label for="nightperson">Who likes to wake up early?! I'm more of a night person, I'm my best in the afternoon and tend to stay up late.</label>
+                </div>
+                <div class="checkbox">
                 <input type="radio" id="nightowl" name="roommatetype" value="nightowl">
-                <label for="nightowl">I'm more of a night owl. I get my besy work done later at night!</label><br>
+                <label for="nightowl">I'm more of a night owl. I get my besy work done later at night!</label>
+            </div>
             </div>
         <div>
             <h5>How social are you?</h5>
+            <div class="checkbox1">
                 <input type="checkbox" id="notsocial" name="howsocial" value="notsocial">
-                <label for="notsocial"> I like to keep to myself, I have lots of studying to do!</label><br>
+                <label for="notsocial"> I like to keep to myself, I have lots of studying to do!</label>
+            </div>
+            <div class="checkbox1">
                 <input type="checkbox" id="somewhatsocial" name="howsocial" value="somewhatsocial">
-                <label for="somewhatsocial"> I like hanging out with friends! I'll hang out in their rooms, but I also like my alone time as well.</label><br>
+                <label for="somewhatsocial"> I like hanging out with friends! I'll hang out in their rooms, but I also like my alone time as well.</label>
+            </div>
+            <div class="checkbox1">
                 <input type="checkbox" id="verysocial" name="howsocial" value="verysocial">
-                <label for="verysocial"> I love spending time with friends and going out! You probably won't see me much in my dorm room.</label><br>
+                <label for="verysocial"> I love spending time with friends and going out! You probably won't see me much in my dorm room.</label>
+            </div>
         </div>
         <div>
             <h5>Do you have any dietary restrictions?</h5>
