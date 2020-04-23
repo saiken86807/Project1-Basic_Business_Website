@@ -226,7 +226,7 @@ body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Luci
   margin-right: auto;
 }
 /* Housing form edits for radio and checkbox alignment. Edit suggestions by Melvin */
-.checkbox, .checkbox1, .radio, #radio2 {
+.checkbox, .checkbox1, .radio, .radio2 {
   display:flex;
 }
 
@@ -236,13 +236,13 @@ body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Luci
   top: 1em;
 }
 
-.checkbox1 input, .radio input, #radio2 input {
+.checkbox1 input, .radio input, .radio2 input {
   flex: 1;
   position: relative;
   top: 0.2em;
 }
 
-.checkbox label, .checkbox1 label, .radio label, #radio2 label {
+.checkbox label, .checkbox1 label, .radio label, .radio2 label {
   flex: 12;
 }
 /* Make some adjustments with radio and checkbox above and beloe this line */
