@@ -15,7 +15,7 @@
             <p>Your Enrollment Portal will be your one-stop-shop checklist guide to complete before you get ready to start your journey here at Aiken College!</p>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" href="#">Aiken College</a>
+        <a class="navbar-brand"><img src="img/aiken-logo.jpg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,14 +30,15 @@
               </div>
         </div>
     </nav>
+    <main>
     <div class="welocme-page">
         <img class="checklist-section" src="img/college-checklist.jpg" alt="College Checklist photo" width=400>      
       <h2><em>Welcome to your Enrollment Portal</em></h2><!--I have consolidated the original Log in page and Welcome Page into 1 page now-->
       <h3>Congratulations!</h3> 
-          <p>You've had a tough decision to make! You've narrowed down your choice to 1, and you made it official by depositing! You can take a deep breathe now and enjoy the rest of your senior year of high school!</p><section>
+          <p>You've had a tough decision to make! You've narrowed down your choice to one, and you made it official by depositing! You can take a deep breathe now and enjoy the rest of your senior year of high school!</p><section>
           <h5>Now your probably wondering <i>What do I need to do next?</i></h5>
           <p>Your Enrollment Portal will be your one-stop-shop checklist guide to complete before you get ready to start your journey here at Aiken College!</p>
-            <ol>
+            <ol class="order">
               <li>Housing Information</li>
               <li>New Student Orientation</li>
               <li>Health Portal</li>
@@ -45,7 +46,7 @@
           </ol>
       </section> 
  <!--I decided to add a popout form for a log in screen instead within this new condensed page-->
-      <button onclick="document.getElementById('loginpopout').style.display='block'" style="width:25%;">Login</button>
+      <button class="button-login" onclick="document.getElementById('loginpopout').style.display='block'" style="width:25%;">Login</button>
     </div>
  <div id="loginpopout" class="popout">
     <form class="popout-content animate" action="/action_page.php" method="post">
@@ -81,6 +82,7 @@
          }
      }
      </script>
+     </main>
     <footer><!--added a footer-->
       <div class="footer-info">
         <p>The site was created by Stefanie Aiken</p>

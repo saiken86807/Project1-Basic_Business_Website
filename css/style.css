@@ -5,7 +5,7 @@ html {
 
 /*        Navigation Bar       */
 .bg-primary.bg-primary{
-  background-color: #b388ff!important;
+  background-color: #81d4fa!important;
   padding: 10px;
   font-weight: 800;
   font-size: 20px;
@@ -14,7 +14,7 @@ html {
   background-color: #40c4ff;
 }
 .jumbotron {
-  background-image: linear-gradient(to right, #ff80ab, violet, #b388ff , #40c4ff);
+  background-image: linear-gradient( #b388ff, #81d4fa);
   text-align: center;
   font-size: 26px;
 }
@@ -27,108 +27,110 @@ html {
 /*   Log In popout screen */
 
 input[type=text], input[type=password], input[type=email], input[type=number] {
-width: 100%;
-padding: 12px 20px;
-margin: 8px 0;
-display: inline-block;
-border: 3px solid #8842d5;
-box-sizing: border-box;
-border-radius: 5px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #8842d5;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
+
 button {
-background-color: #b388ff;
-color: white;
-padding: 6px 20px;
-margin: 10px 0;
-border: none;
-cursor: pointer;
-width: 100%;
-font-size: medium;
-text-align: center;
-top: 8px;
+  background-color: #81d4fa;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 800;
+  padding: 6px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: medium;
+  text-align: center;
+  top: 8px;
 }
 
 button:hover {
   background-color: #40c4ff;
+  color: rgba(0, 0, 0, 0.7);
 }
 .cancelbtn:hover {
-width: auto;
-padding: 10px 18px;
-background-color: #f44336;
-color: white
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  color: white
 }
 .cancelbtn {
-width: auto;
-padding: 10px 18px;
-background-color: white;
-color: #f44336;
-border-radius: 5px;
+  width: auto;
+  padding: 10px 18px;
+  background-color: white;
+  color: #f44336;
+  border-radius: 5px;
 }
 
 .imgcontainer {
-text-align: center;
-margin: 24px 0 12px 0;
-position: relative;
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
 }
 img.avatar {
-width: 40%;
+  width: 40%;
 }
 .container {
-padding: 16px;
-background-color: lightblue;
+  padding: 16px;
+  background-color: lightblue;
 }
 span.psw {
-float: right;
-padding-top: 16px;
+  float: right;
+  padding-top: 16px;
 }
 .popout {
-display: none; 
-position: fixed; 
-z-index: 1; 
-left: 0;
-top: 0;
-width: 100%; 
-height: 100%; 
-overflow: auto; 
-background-color: rgb(0,0,0); 
-background-color: rgba(0,0,0,0.4); 
-padding-top: 60px;
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
 }
 .popout-content {
-background-color:lightblue;
-margin: 5% auto 15% auto; 
-border: 1px solid #888;
-width: 30%; 
+  background-color:lightblue;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 30%; 
 }
 
 .close {
-position: absolute;
-right: 25px;
-top: 0;
-color: #000;
-font-size: 35px;
-font-weight: bold;
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-color: red;
-cursor: pointer;
-}
+.close:hover, .close:focus {
+  color: red;
+  cursor: pointer;
+  }
 
 .animate {
--webkit-animation: animatezoom 0.6s;
-animation: animatezoom 0.6s
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
 }
 
 @-webkit-keyframes animatezoom {
-from {-webkit-transform: scale(0)} 
-to {-webkit-transform: scale(1)}
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
 }
 
 @keyframes animatezoom {
-from {transform: scale(0)} 
-to {transform: scale(1)}
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
 }
 
 @media screen and (max-width: 300px) {
@@ -153,7 +155,7 @@ span.psw {
   background-color: #81d4fa;
   padding: 20px;
 }
-.nso-main {
+.nso-main, .side {
   flex: 45%;
   background-color: #81d4fa;
   padding: 20px;
@@ -169,18 +171,13 @@ span.psw {
   display: flex;
   flex-wrap: wrap;
 }
-.side {
-  flex: 45%;
-  background-color: #81d4fa;
-  padding: 20px;
-}
 
 @media screen and (max-width: 700px) {
   .row {
     flex-direction: column;
   }
 }
-.nso-mainh2, .housing-sideh2 {
+.nso-mainh2, .housing-sideh2, .housing-info {
   text-align: center;
 }
 .must-have-h3 {
@@ -204,45 +201,31 @@ body {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Luci
 }
 .checklist-section, .footer-info, .health-portal, .tuition-body {
   float: left;
-  padding-right: 30px;
-  margin: 10px;
-}
-
-#multi-column-body {
-  margin: 10px;
+  padding-right: 20px;
 }
 
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.housing-info {
-  background-color: #81d4fa;
-  text-align: center;
-}
-.dorm-checklist, .financing {
+.dorm-checklist, .financing, .nso-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 4px solid slategray;
 }
 /* Housing form edits for radio and checkbox alignment. Edit suggestions by Melvin */
-.checkbox, .checkbox1, .radio, .radio2 {
+.checkbox1, .radio {
   display:flex;
 }
 
-.checkbox input {
-  flex: 1;
-  position: relative;
-  top: 1em;
-}
-
-.checkbox1 input, .radio input, .radio2 input {
+.checkbox1 input, .radio input {
   flex: 1;
   position: relative;
   top: 0.2em;
 }
 
-.checkbox label, .checkbox1 label, .radio label, .radio2 label {
+ .checkbox1 label, .radio label {
   flex: 12;
 }
 /* Make some adjustments with radio and checkbox above and beloe this line */
@@ -262,7 +245,7 @@ input[type=checkbox] {
 }
 /*end of edits for checkbox and radio buttons */
 
-.nso-button, .housing-button {
+.nso-button, .housing-button, .button-login {
     background-color: #b388ff;
     color: white;
     padding: 4px 10px;
@@ -276,17 +259,13 @@ input[type=checkbox] {
     }
 
 .nso-img, .financing {
-  padding-bottom: 20px;
+  border: 4px solid slategray;
 }
-    
-button:hover {
-      background-color: #40c4ff;
-    }
 
 /* Added styling for footer */
 footer {
   margin-top: auto;
-  padding: 1em;
+  padding: 30px;
   background-image: linear-gradient(#81d4fa, #b388ff);
   text-decoration: none;
   display: flex;
@@ -295,6 +274,24 @@ footer {
 .footer-social {
   list-style-type: none;
   margin: 10;
-  padding: 0;
   float: right;
+  padding-left: 30px;
+}
+
+main {
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.health-main, .tuition-main, .nso-sidetext {
+  padding-top: 20px;
+  
+}
+.tuition-main, .checklist-section {
+  font-size: 18px;
+}
+
+.order, .unordered {
+  display: inline-block;
+  margin-left: 20px;
 }

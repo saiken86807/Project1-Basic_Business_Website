@@ -15,7 +15,7 @@
         <p>Your Enrollment Portal will be your one-stop-shop checklist guide to complete before you get ready to start your journey here at Aiken College!</p>
         </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-        <a class="navbar-brand" href="#">Aiken College</a>
+        <a class="navbar-brand"><img src="img/aiken-logo.jpg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,14 +26,16 @@
             <a class="nav-item nav-link active" href="new-student-orientation.html">NSO <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="health-portal.html">Student Health</a>
             <a class="nav-item nav-link" href="paying-your-tuition.html">Pay your Tuition</a>
-            <a class="nav-item nav-link" href="#">Log Out</a>
+            <a class="nav-item nav-link" href="index.html">Log Out</a>
           </div>
         </div>
       </nav>
+      <main>
       <div id="multi-column-body">
       <div class="row"><!--Created a side column w/ main content area-->
         <div class="nso-side">
             <img class="nso-img" src="img/NSO-logo.jpg" alt="New Student Orientation Logo" width=500><!--Added an NSO logo on the side bar-->
+           <section class="nso-sidetext">
             <h3>What will I need to Bring with me for my overnight stay for New Student Orientation?</h3>
                 <ul>
                     <li>Change of clothing, including sleepwear</li>
@@ -48,6 +50,7 @@
                     <li>Laptop computers</li>
                     <li>Alcohol or other drugs- <b>Please Note:</b> Alcohol/drugs are prohibited and any negative behaviors and/or improper conduct could affect your standing with Aiken College.</li>
                 </ul>
+            </section>
         </div>
         <div class="nso-main">
             <h2 class="nso-mainh2"><em>New Student Orientation Registration Form</em></h2>
@@ -61,41 +64,41 @@
                     <hr>
                 <div>   
                     <h5>Do you have any dietary restrictions?</h5>
-                    <div class="radio2">
+                    <div class="radio">
                     <input type="radio" name="dietary-yes-no" id="dietary-yes" value="dietary-yes">
                     <label for="dietary-yes">Yes</label>
                     </div>
-                    <div class="radio2">
+                    <div class="radio">
                     <input type="radio" name="dietary-yes-no" id="dietary-no" value="dietary-no">
                     <label for="dietary-no">No</label>
                     </div>
-                    <h6>If Yes, please explain: <input name="dietaryexplain" type="text" placeholder="Please List"></h6>
+                <h5>If Yes, please explain: <input name="dietaryexplain" type="text" placeholder="Please List"></h5>
                 </div> 
                     <hr>
                 <div>
-                    <h5>Do you have any life threating allergies?</h5>
-                <div class="radio2">
+                <h5>Do you have any life threating allergies?</h5>
+                <div class="radio">
                     <input type="radio" name="life-threating-allergy-yes-no" id="allergy-yes" value="allergy-yes">
                     <label for="allergy-yes">Yes</label>
                 </div>
-                <div class="radio2">
+                <div class="radio">
                     <input type="radio" name="life-threating-allergy-yes-no" id="allergy-no" value="allergy-no">
                     <label for="allergy-no">No</label>
                 </div>
-                    <h6>If Yes, please explain: <input name="allergyexplain" type="text" placeholder="Please List"></h6>
+                    <h5>If Yes, please explain: <input name="allergyexplain" type="text" placeholder="Please List"></h5>
                 </div>
                     <hr>
                 <div>
                     <h5>What Session would you like to attend:</h5>
-                <div class="radio2">
+                <div class="radio">
                     <input type="radio" name="orientation-session" id="orientation-session-1" value="orientation-session-1">
                     <label for="orientation-session-1">Session 1: July 20-21st</label>
                 </div>
-                <div class="radio2">
+                <div class="radio">
                     <input type="radio" name="orientation-session" id="orientation-session-2" value="orientation-session-2">
                     <label for="orientation-session-2">Session 2: July 22-23rd</label>
                 </div>
-                <div class="radio2">
+                <div class="radio">
                     <input type="radio" name="orientation-session" id="orientation-session-3" value="orientation-session-3">
                     <label for="orientation-session-3">Session 3: July 23-24th</label>
                 </div>
@@ -106,6 +109,7 @@
     </div>
 </div>
 </div>
+</main>
 <footer><!--added a footer-->
     <div class="footer-info">
       <p>The site was created by Stefanie Aiken</p>
