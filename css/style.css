@@ -133,7 +133,7 @@ span.psw {
   to {transform: scale(1)}
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (min-width: 600px) {
 span.psw {
    display: block;
    float: none;
@@ -172,7 +172,7 @@ span.psw {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 600px) {
   .row {
     flex-direction: column;
   }
