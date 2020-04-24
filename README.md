@@ -45,5 +45,5 @@ First-time college bound students who recently graduated high school, or will be
 
 ### User Stories:
 1. As a first-gen high school student who recently made my deposit, I want to know all the things that need to be completed before the fall so that I can start my first semester on time.
-2. as a parent of a first-gen high school student who decided to make their deposit, I want to know what my student needs to complete so I can know my student will be starting off their first semester without any hiccups.
+2. As a parent of a first-gen high school student who decided to make their deposit, I want to know what my student needs to complete so I can know my student will be starting off their first semester without any hiccups.
 3. As student who has had older siblings go to college and met barriers before starting classes, I want to be able to have everything I need completed in one convient location so I can check these items off and start my first semester smoothly!
