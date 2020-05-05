@@ -133,7 +133,7 @@ span.psw {
   to {transform: scale(1)}
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
 span.psw {
    display: block;
    float: none;
@@ -294,4 +294,8 @@ main {
 .order, .unordered {
   display: inline-block;
   margin-left: 20px;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;  
 }
